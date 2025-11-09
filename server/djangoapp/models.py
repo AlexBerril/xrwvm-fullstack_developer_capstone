@@ -1,7 +1,6 @@
 # Uncomment the following imports before adding the Model code
 
 from django.db import models
-#from django.utils.timezone import now
 from django.core.validators import MaxValueValidator, MinValueValidator
 
 
@@ -18,9 +17,8 @@ class CarMake(models.Model):
 # Car Model
 class CarModel(models.Model):
     # связь многие-к-одному: одна марка -> много моделей
-    car_make = models.ForeignKey(CarMake, 
+    car_make = models.ForeignKey(CarMake,
     on_delete=models.CASCADE, related_name="models")
-
     # ID дилера (из Cloudant). Чётко по заданию — IntegerField
     dealer_id = models.IntegerField()
 
