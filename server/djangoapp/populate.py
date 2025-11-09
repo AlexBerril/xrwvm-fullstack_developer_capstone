@@ -1,5 +1,6 @@
 from .models import CarMake, CarModel
 
+
 def initiate():
 
     car_make_data = [
@@ -20,39 +21,39 @@ def initiate():
     }
 
     car_model_data = [
-        {"name": "Pathfinder", "type": "SUV",   
+        {"name": "Pathfinder", "type": "SUV",
         "year": 2023, "car_make": makes[0]},
-        {"name": "Qashqai",    "type": "SUV",   
+        {"name": "Qashqai",    "type": "SUV",
         "year": 2023, "car_make": makes[0]},
-        {"name": "XTRAIL",     "type": "SUV",   
+        {"name": "XTRAIL",     "type": "SUV",
         "year": 2023, "car_make": makes[0]},
 
-        {"name": "A-Class",    "type": "SUV",   
+        {"name": "A-Class",    "type": "SUV",
         "year": 2023, "car_make": makes[1]},
-        {"name": "C-Class",    "type": "SUV",   
+        {"name": "C-Class",    "type": "SUV",
         "year": 2023, "car_make": makes[1]},
-        {"name": "E-Class",    "type": "SUV",   
+        {"name": "E-Class",    "type": "SUV",
         "year": 2023, "car_make": makes[1]},
 
-        {"name": "A4",         "type": "SUV",   
+        {"name": "A4",         "type": "SUV",
         "year": 2023, "car_make": makes[2]},
-        {"name": "A5",         "type": "SUV",   
+        {"name": "A5",         "type": "SUV",
         "year": 2023, "car_make": makes[2]},
-        {"name": "A6",         "type": "SUV",   
+        {"name": "A6",         "type": "SUV",
         "year": 2023, "car_make": makes[2]},
 
-        {"name": "Sorrento",   "type": "SUV",   
+        {"name": "Sorrento",   "type": "SUV",
         "year": 2023, "car_make": makes[3]},
-        {"name": "Carnival",   "type": "SUV",   
+        {"name": "Carnival",   "type": "SUV",
         "year": 2023, "car_make": makes[3]},
-        {"name": "Cerato",     "type": "Sedan", 
+        {"name": "Cerato",     "type": "Sedan",
         "year": 2023, "car_make": makes[3]},
 
-        {"name": "Corolla",    "type": "Sedan", 
+        {"name": "Corolla",    "type": "Sedan",
         "year": 2023, "car_make": makes[4]},
-        {"name": "Camry",      "type": "Sedan", 
+        {"name": "Camry",      "type": "Sedan",
         "year": 2023, "car_make": makes[4]},
-        {"name": "Kluger",     "type": "SUV",   
+        {"name": "Kluger",     "type": "SUV",
         "year": 2023, "car_make": makes[4]},
     ]
 
