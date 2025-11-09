@@ -99,7 +99,7 @@ app.post('/insert_review', express.raw({ type: '*/*' }), async (req, res) => {
   try {
     const data = JSON.parse(req.body);
     const documents = await Reviews.find().sort({ id: -1 });
-    const new_id = (documents[0]?.id || 0) + 1;
+    const new_id = (documents[0] && documents[0].id);
 
     const review = new Reviews({
       id: new_id,
