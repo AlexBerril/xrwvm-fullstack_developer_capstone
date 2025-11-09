@@ -1,7 +1,7 @@
 from .models import CarMake, CarModel
 
 def initiate():
-    # создаём марки
+
     car_make_data = [
         {"name": "NISSAN",   "description": "Great cars. Japanese technology"},
         {"name": "Mercedes", "description": "Great cars. German technology"},
@@ -11,7 +11,6 @@ def initiate():
     ]
     makes = [CarMake.objects.create(**d) for d in car_make_data]
 
-    # сопоставим марке dealer_id (1..5)
     dealer_id_by_make = {
         "NISSAN": 1,
         "Mercedes": 2,
@@ -20,27 +19,41 @@ def initiate():
         "Toyota": 5,
     }
 
-    # создаём модели (добавлен dealer_id)
     car_model_data = [
-        {"name": "Pathfinder", "type": "SUV",   "year": 2023, "car_make": makes[0]},
-        {"name": "Qashqai",    "type": "SUV",   "year": 2023, "car_make": makes[0]},
-        {"name": "XTRAIL",     "type": "SUV",   "year": 2023, "car_make": makes[0]},
+        {"name": "Pathfinder", "type": "SUV",   
+        "year": 2023, "car_make": makes[0]},
+        {"name": "Qashqai",    "type": "SUV",   
+        "year": 2023, "car_make": makes[0]},
+        {"name": "XTRAIL",     "type": "SUV",   
+        "year": 2023, "car_make": makes[0]},
 
-        {"name": "A-Class",    "type": "SUV",   "year": 2023, "car_make": makes[1]},
-        {"name": "C-Class",    "type": "SUV",   "year": 2023, "car_make": makes[1]},
-        {"name": "E-Class",    "type": "SUV",   "year": 2023, "car_make": makes[1]},
+        {"name": "A-Class",    "type": "SUV",   
+        "year": 2023, "car_make": makes[1]},
+        {"name": "C-Class",    "type": "SUV",   
+        "year": 2023, "car_make": makes[1]},
+        {"name": "E-Class",    "type": "SUV",   
+        "year": 2023, "car_make": makes[1]},
 
-        {"name": "A4",         "type": "SUV",   "year": 2023, "car_make": makes[2]},
-        {"name": "A5",         "type": "SUV",   "year": 2023, "car_make": makes[2]},
-        {"name": "A6",         "type": "SUV",   "year": 2023, "car_make": makes[2]},
+        {"name": "A4",         "type": "SUV",   
+        "year": 2023, "car_make": makes[2]},
+        {"name": "A5",         "type": "SUV",   
+        "year": 2023, "car_make": makes[2]},
+        {"name": "A6",         "type": "SUV",   
+        "year": 2023, "car_make": makes[2]},
 
-        {"name": "Sorrento",   "type": "SUV",   "year": 2023, "car_make": makes[3]},
-        {"name": "Carnival",   "type": "SUV",   "year": 2023, "car_make": makes[3]},
-        {"name": "Cerato",     "type": "Sedan", "year": 2023, "car_make": makes[3]},
+        {"name": "Sorrento",   "type": "SUV",   
+        "year": 2023, "car_make": makes[3]},
+        {"name": "Carnival",   "type": "SUV",   
+        "year": 2023, "car_make": makes[3]},
+        {"name": "Cerato",     "type": "Sedan", 
+        "year": 2023, "car_make": makes[3]},
 
-        {"name": "Corolla",    "type": "Sedan", "year": 2023, "car_make": makes[4]},
-        {"name": "Camry",      "type": "Sedan", "year": 2023, "car_make": makes[4]},
-        {"name": "Kluger",     "type": "SUV",   "year": 2023, "car_make": makes[4]},
+        {"name": "Corolla",    "type": "Sedan", 
+        "year": 2023, "car_make": makes[4]},
+        {"name": "Camry",      "type": "Sedan", 
+        "year": 2023, "car_make": makes[4]},
+        {"name": "Kluger",     "type": "SUV",   
+        "year": 2023, "car_make": makes[4]},
     ]
 
     for d in car_model_data:
